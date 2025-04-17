@@ -12,5 +12,5 @@ db_name = f"{os.getenv("DB_NAME")}"
 SQL_COONNECTION = f"mysql+mysqlconnector://{user}@{host}/{db_name}"
 
 engine = create_engine(SQL_COONNECTION)
-sessionLocal = Session(engine, future=True)
+db = Session(engine, future=True)
 Base = declarative_base()

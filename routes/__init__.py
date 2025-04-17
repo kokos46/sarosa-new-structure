@@ -2,4 +2,5 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-from . import routes
+from . import users
+from . import pets
